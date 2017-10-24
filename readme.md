@@ -1,7 +1,5 @@
 # Homework
 
-Read over the code we did today. Don't be afraid to refer to it, but try not to copy / paste (except for config stuff like webpack).
-
 - make a very simple mongo database of your choosing.
 
 - create a seed file (use a database dropDatabase, insert some documents)
@@ -23,9 +21,9 @@ EXTENSION: If you feel ambitious, make a client / UI for your data
 ---
 ## Notes
 
-If you get this error message"
+If you get this error message:
 
-"Unable to lock file: /data/db/mongod.lock Resource temporarily unavailable. Is a mongod instance already running?, terminating"
+"Unable to lock file: /data/db/mongod.lock Resource temporarily unavailable. Is a mongod instance already running?, terminating",
 
 you probably didn't close mongod cleanly and you can quit mongod using Activity Monitor
 
