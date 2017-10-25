@@ -1,7 +1,7 @@
 var MongoClient = require("mongodb").MongoClient;
 
 var booksQueryHelper = {
-  url: "mongodb://localhost:27017/film_reviews_site",
+  url: "mongodb://localhost:27017/favourites",
   all: function(onQueryFinished) {
     console.log("booksQueryHelper.all started");
 
@@ -9,7 +9,7 @@ var booksQueryHelper = {
         console.log("MongoClient.connect started");
         var booksCollection = db.collection("books");
 
-        filmsCollection.find().toArray(function (err, docs) {
+        booksCollection.find().toArray(function (err, docs) {
           console.log(".find().toArray() callback start");
           console.log("calling onQueryFinished with docs");
           onQueryFinished(docs);
